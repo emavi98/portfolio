@@ -56,6 +56,7 @@
 .navMenu {
   display: none;
 
+
   a {
     font-size: 1.3rem;
     color: var(--text-secondary);
@@ -67,6 +68,7 @@
   }
 
   .linkWrapper a:hover {
+    
     color: var(--text-tertiary);
   }
 
@@ -99,6 +101,7 @@
 
     .navMenu {
       display: flex;
+      
       width: 45%;
 
       &.responsive {

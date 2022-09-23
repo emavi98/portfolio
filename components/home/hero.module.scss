@@ -3,8 +3,10 @@
 
   .row {
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
     height: 100%;
+    margin-top: 2em;
+    
   }
 
   .columnLeft {
@@ -45,6 +47,7 @@
   .columnRight {
     order: 1;
     &.profilePic {
+      
       max-width: 205px;
       max-height: 205px;
       text-align: center;

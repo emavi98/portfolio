@@ -1,30 +1,28 @@
-import classes from './footer.module.scss';
+import classes from "./footer.module.scss";
 
 const Footer = () => {
   return (
     <footer className={classes.footer}>
       <div className={classes.socialMedia}>
-        <a
-          href='https://github.com/renebitter'
-          target='_blank'
-          rel='noreferrer'>
-          <i className='fab fa-github'></i>
+        <a href="https://github.com/emavi98" target="_blank" rel="noreferrer">
+          <i className="fab fa-github"></i>
         </a>
         <a
-          href='https://www.linkedin.com/in/rene-bitter/'
-          target='_blank'
-          rel='noreferrer'>
-          <i className='fab fa-linkedin'></i>
+          href="https://www.linkedin.com/in/emanuel-villalba-01b3a7106/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="fab fa-linkedin"></i>
         </a>
       </div>
-      <div>© Rene Bitter</div>
+      <div>© Emanuel Villalba</div>
       <small>
-        Icons used from{' '}
-        <a href='https://www.flaticon.com/' target='_blank' rel='noreferrer'>
+        Icons used from{" "}
+        <a href="https://www.flaticon.com/" target="_blank" rel="noreferrer">
           Flaticon
-        </a>{' '}
-        &{' '}
-        <a href='https://fontawesome.com/' target='_blank' rel='noreferrer'>
+        </a>{" "}
+        &{" "}
+        <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">
           Font Awesome
         </a>
       </small>

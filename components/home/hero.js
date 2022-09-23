@@ -1,16 +1,16 @@
-import classes from './hero.module.scss';
-import Image from 'next/image';
-import { useState, useEffect } from 'react';
-import Modal from '../ui/modal/modal';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { motion, AnimatePresence } from 'framer-motion';
+import classes from "./hero.module.scss";
+import Image from "next/image";
+import { useState, useEffect } from "react";
+import Modal from "../ui/modal/modal";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Hero = () => {
   const [showModal, setShowModal] = useState();
 
   function buttonHandler() {
-    window.location.href = '#projects';
+    window.location.href = "#projects";
   }
 
   function showModalHandler() {
@@ -22,8 +22,8 @@ const Hero = () => {
   }
 
   useEffect(() => {
-    if (showModal) document.body.style.overflow = 'hidden';
-    if (!showModal) document.body.style.overflow = 'unset';
+    if (showModal) document.body.style.overflow = "hidden";
+    if (!showModal) document.body.style.overflow = "unset";
   }, [showModal]);
 
   useEffect(() => {
@@ -35,99 +35,107 @@ const Hero = () => {
       <div className={classes.container}>
         <div className={classes.row}>
           <div className={classes.columnLeft}>
-            <h3 data-aos='fade-left'>Hi, my name is Rene.</h3>
-            <h1 data-aos='fade-right'>
-              I&apos;m a React Frontend Developer with experience in e-commerce.
+            {/*             <br />
+            <br />
+
+            <h3 data-aos="fade-left">Hi, my name is Emanuel Villalba.</h3> */}
+            <h1 data-aos="fade-right">
+              Hi, my name is Emanuel Villalba. I&apos;m a React Frontend
+              Developer with experience in e-commerce, ERP, API.
             </h1>
-            <p data-aos='fade-left' data-aos-delay='150'>
-              I&apos;m fluent in English{' '}
+            <p data-aos="fade-left" data-aos-delay="150">
+              I&apos;m fluent in English{" "}
               <span>
                 <Image
-                  src='/portfolio/images/usa.png'
-                  alt='usa-flag'
+                  src="/portfolio/images/usa.png"
+                  alt="usa-flag"
                   width={16}
                   height={16}
                 />
               </span>
-              , German{' '}
+              , Spanish{" "}
               <span>
                 <Image
-                  src='/portfolio/images/germany.png'
-                  alt='usa-flag'
+                  src="/portfolio/images/germany.png"
+                  alt="usa-flag"
                   width={16}
                   height={16}
                 />
               </span>
-              , Portuguese{' '}
+              , and Javascript{" "}
               <span>
                 <Image
-                  src='/portfolio/images/brazil.png'
-                  alt='usa-flag'
-                  width={16}
-                  height={16}
-                />
-              </span>{' '}
-              and Javascript{' '}
-              <span>
-                <Image
-                  src='/portfolio/images/js.png'
-                  alt='usa-flag'
+                  src="/portfolio/images/js.png"
+                  alt="usa-flag"
                   width={16}
                   height={16}
                 />
               </span>
-              .
+              . I am learning frontend technologies for about 2 years. I am
+              looking for a job as React, React-native or Next.js developer. I
+              am a self-learner and took my entire knowledge from tutorials,
+              documentations, and developer articles. I developed few projects
+              as a utilization of my current knowledge
             </p>
             <div className={classes.socialMedia}>
               <a
-                href='https://github.com/renebitter'
-                target='_blank'
-                rel='noreferrer'>
-                <i className='fab fa-github' data-aos='flip-up'></i>
+                href="https://github.com/emavi98"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-github" data-aos="flip-up"></i>
               </a>
               <a
-                href='https://www.linkedin.com/in/rene-bitter/'
-                target='_blank'
-                rel='noreferrer'>
+                href="https://www.linkedin.com/in/emanuel-villalba-01b3a7106/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i
-                  className='fab fa-linkedin'
-                  data-aos='flip-up'
-                  data-aos-delay='50'></i>
-              </a>{' '}
+                  className="fab fa-linkedin"
+                  data-aos="flip-up"
+                  data-aos-delay="50"
+                ></i>
+              </a>{" "}
+              {/* <a
+                href="https://twitter.com/devrbitter"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i
+                  className="fab fa-twitter"
+                  data-aos="flip-up"
+                  data-aos-delay="100"
+                ></i>
+              </a>{" "}
               <a
-                href='https://twitter.com/devrbitter'
-                target='_blank'
-                rel='noreferrer'>
+                href="https://codepen.io/rbitterdev"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i
-                  className='fab fa-twitter'
-                  data-aos='flip-up'
-                  data-aos-delay='100'></i>
-              </a>{' '}
-              <a
-                href='https://codepen.io/rbitterdev'
-                target='_blank'
-                rel='noreferrer'>
-                <i
-                  className='fab fa-codepen'
-                  data-aos='flip-up'
-                  data-aos-delay='150'></i>
-              </a>
+                  className="fab fa-codepen"
+                  data-aos="flip-up"
+                  data-aos-delay="150"
+                ></i>
+              </a> */}
             </div>
             <div className={classes.ctaButtons}>
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className='btn btn-filled'
-                data-aos='fade-up'
-                onClick={buttonHandler}>
+                className="btn btn-filled"
+                data-aos="fade-up"
+                onClick={buttonHandler}
+              >
                 My Work
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className='btn btn-outlined'
-                data-aos='fade-down'
-                onClick={showModalHandler}>
+                className="btn btn-outlined"
+                data-aos="fade-down"
+                onClick={showModalHandler}
+              >
                 Let&apos;s Talk
               </motion.button>
             </div>
@@ -135,20 +143,22 @@ const Hero = () => {
 
           <div className={`${classes.columnRight} ${classes.profilePic}`}>
             <Image
-              src='/portfolio/images/profile-pic.webp'
-              width={460}
-              height={460}
-              alt='profile-pic'
-              data-aos='fade-left'
+              src="/portfolio/images/emanuel.png"
+              width={320}
+              height={380}
+              alt="profile-pic"
+              data-aos="fade-left"
             />
           </div>
         </div>
-        <div className='iconScrollContainer'>
-          <a href='#projects'>
+
+        <div className="iconScrollContainer">
+          <a href="#projects">
             <div
-              className='iconScroll'
-              data-aos='fade-down'
-              data-aos-offset='50'></div>
+              className="iconScroll"
+              data-aos="fade-down"
+              data-aos-offset="50"
+            ></div>
           </a>
         </div>
       </div>

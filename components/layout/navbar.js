@@ -1,8 +1,8 @@
-import classes from './navbar.module.scss';
-import { useState, useEffect } from 'react';
-import Modal from '../ui/modal/modal';
-import Link from 'next/link';
-import { AnimatePresence } from 'framer-motion';
+import classes from "./navbar.module.scss";
+import { useState, useEffect } from "react";
+import Modal from "../ui/modal/modal";
+import Link from "next/link";
+import { AnimatePresence } from "framer-motion";
 
 const Navbar = (props) => {
   const { theme } = props;
@@ -11,7 +11,7 @@ const Navbar = (props) => {
   const [showModal, setShowModal] = useState();
 
   function setThemeHandler() {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
+    const newTheme = theme === "light" ? "dark" : "light";
     props.newTheme(newTheme);
   }
 
@@ -40,8 +40,8 @@ const Navbar = (props) => {
   }
 
   useEffect(() => {
-    if (showModal) document.body.style.overflow = 'hidden';
-    if (!showModal) document.body.style.overflow = 'unset';
+    if (showModal) document.body.style.overflow = "hidden";
+    if (!showModal) document.body.style.overflow = "unset";
   }, [showModal]);
 
   useEffect(() => {
@@ -53,10 +53,13 @@ const Navbar = (props) => {
       <div
         className={
           sticky ? `${classes.navbar}  ${classes.sticky}` : `${classes.navbar} `
-        }>
+        }
+      >
         <div className={classes.container}>
-          <Link href='/'>
-            <a className={classes.logo}>.</a>
+          <Link href="/">
+            <a>
+              <h3>Emanuel Villalba portfolio</h3>
+            </a>
           </Link>
 
           <nav
@@ -65,49 +68,52 @@ const Navbar = (props) => {
                 ? `${classes.navMenu} ${classes.responsive}`
                 : `${classes.navMenu}`
             }
-            id='navMenu'>
+            id="navMenu"
+          >
             <div className={classes.linkWrapper}>
-              <Link href='/#projects'>
+              <Link href="/#projects">
                 <a onClick={closeNav}>Projects</a>
               </Link>
 
-              <Link href='/#blog'>
-                <a href='#blog' onClick={closeNav}>
+              {/*               <Link href="/#blog">
+                <a href="#blog" onClick={closeNav}>
                   Blog
                 </a>
-              </Link>
-              <Link href='/#about'>
+              </Link> */}
+              <Link href="/#about">
                 <a onClick={closeNav}>About</a>
               </Link>
               <a
-                href='#!'
+                href="#!"
                 onClick={() => {
                   showModalHandler();
                   closeNav();
-                }}>
+                }}
+              >
                 {showModal ? (
-                  <i className='fa fa-envelope-open'></i>
+                  <i className="fa fa-envelope-open"></i>
                 ) : (
-                  <i className='fa fa-envelope'></i>
+                  <i className="fa fa-envelope"></i>
                 )}
               </a>
               <a
-                href='#!'
+                href="#!"
                 onClick={() => {
                   setThemeHandler();
                   closeNav();
-                }}>
-                {theme === 'light' ? (
-                  <i className='fa fa-moon'></i>
+                }}
+              >
+                {theme === "light" ? (
+                  <i className="fa fa-moon"></i>
                 ) : (
-                  <i className='fa fa-sun'></i>
+                  <i className="fa fa-sun"></i>
                 )}
               </a>
             </div>
           </nav>
 
           <button className={classes.icon} onClick={toggleNav}>
-            <i className='fa fa-bars'></i>
+            <i className="fa fa-bars"></i>
           </button>
         </div>
       </div>
