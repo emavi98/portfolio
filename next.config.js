@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     loader: "akamai",
-    path: "",
+    path: isProd ? "https://emanuel-portfolio.vercel.app/" : "",
   },
   basePath: "",
 };

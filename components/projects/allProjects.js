@@ -1,12 +1,12 @@
-import classes from './allProjects.module.scss';
-import { useState } from 'react';
-import ProjectItem from './projectItem';
-import { motion, AnimatePresence } from 'framer-motion';
+import classes from "./allProjects.module.scss";
+import { useState } from "react";
+import ProjectItem from "./projectItem";
+import { motion, AnimatePresence } from "framer-motion";
 
 const AllProjects = (props) => {
   const { projects } = props;
-  const [filter, setFilter] = useState('all');
-  const [activeButton, setActiveButton] = useState('all');
+  const [filter, setFilter] = useState("all");
+  const [activeButton, setActiveButton] = useState("all");
 
   //Filter start
   const selectedTechs = [];
@@ -36,7 +36,7 @@ const AllProjects = (props) => {
   //Filter projects according to "filter"
   let filteredProjects;
 
-  if (filter === 'all') {
+  if (filter === "all") {
     filteredProjects = projects.sort((a, b) => b.isFeatured - a.isFeatured);
   } else {
     filteredProjects = projects.filter((project) =>
@@ -48,7 +48,7 @@ const AllProjects = (props) => {
 
   return (
     <div className={classes.projectsGallery}>
-      <div className='container'>
+      <div className="container">
         <h1>All Projects</h1>
         <div className={classes.filter}>
           <p>Sort by tech:</p>
@@ -56,12 +56,13 @@ const AllProjects = (props) => {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              onClick={() => handleClick('all')}
+              onClick={() => handleClick("all")}
               className={
-                activeButton === 'all'
-                  ? 'btn btn-outlined sm active'
-                  : 'btn btn-outlined sm'
-              }>
+                activeButton === "all"
+                  ? "btn btn-outlined sm active"
+                  : "btn btn-outlined sm"
+              }
+            >
               All
             </motion.button>
             {selectedTechs.map((tech) => (
@@ -71,10 +72,11 @@ const AllProjects = (props) => {
                 onClick={() => handleClick(tech)}
                 className={
                   activeButton === tech
-                    ? 'btn btn-outlined sm active'
-                    : 'btn btn-outlined sm'
+                    ? "btn btn-outlined sm active"
+                    : "btn btn-outlined sm"
                 }
-                key={tech}>
+                key={tech}
+              >
                 {tech}
               </motion.button>
             ))}
