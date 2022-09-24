@@ -47,7 +47,7 @@ const Hero = () => {
               I&apos;m fluent in English{" "}
               <span>
                 <Image
-                  src="/portfolio/images/usa.png"
+                  src="images/usa.png"
                   alt="usa-flag"
                   width={16}
                   height={16}
@@ -56,7 +56,7 @@ const Hero = () => {
               , Spanish{" "}
               <span>
                 <Image
-                  src="/portfolio/images/germany.png"
+                  src="images/germany.png"
                   alt="usa-flag"
                   width={16}
                   height={16}
@@ -65,7 +65,7 @@ const Hero = () => {
               , and Javascript{" "}
               <span>
                 <Image
-                  src="/portfolio/images/js.png"
+                  src="images/js.png"
                   alt="usa-flag"
                   width={16}
                   height={16}
@@ -143,7 +143,7 @@ const Hero = () => {
 
           <div className={`${classes.columnRight} ${classes.profilePic}`}>
             <Image
-              src="/portfolio/images/emanuel.png"
+              src="images/emanuel.png"
               width={320}
               height={380}
               alt="profile-pic"

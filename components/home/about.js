@@ -45,7 +45,7 @@ const About = () => {
           <div className={classes.columnRight}>
             <div className={classes.imageContainer}>
               <Image
-                src="/portfolio/images/luz.jpeg"
+                src="images/luz.jpeg"
                 width={450}
                 height={600}
                 alt="profile-pic"
@@ -58,7 +58,7 @@ const About = () => {
               <span className={classes.tooltip}>
                 In case you were wondering about my logo...{" "}
                 <Image
-                  src="/portfolio/images/icons/mindblown.png"
+                  src="images/icons/mindblown.png"
                   alt="mindblown"
                   width={20}
                   height={20}
