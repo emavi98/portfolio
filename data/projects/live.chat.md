@@ -17,7 +17,7 @@
 
   liveLink: https://react-chat-socketio-vite.herokuapp.com/
   githubLink: https://github.com/emavi98/React-Chat-online
-  image: live-chat.png
+  image: live-chat.PNG
   isFeatured: true
 
 

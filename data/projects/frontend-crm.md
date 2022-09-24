@@ -17,14 +17,14 @@
 
   liveLink: https://crm-frontend-react-redux.vercel.app/
   githubLink: https://github.com/emavi98/CRM-Frontend-React-Redux
-  image: frontend-crm.png
+  image: frontend-crm.PNG
   isFeatured: true
   screenshots:
-    - screenshot: dashboard.png
+    - screenshot: dashboard.PNG
       description: Dashboard view, estructure used in crm apps.
-    - screenshot: react-table.png
+    - screenshot: react-table.PNG
       description: react table very flexible for this purpose.
-    - screenshot: modal.png
+    - screenshot: modal.PNG
       description: Again a modal, but this is not a package i build this modal.
 
 ---

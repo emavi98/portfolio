@@ -16,16 +16,16 @@
 
   liveLink: https://mern-calendar-emanuel.herokuapp.com/
   githubLink: https://github.com/emavi98/Calendar-app-MERN-Stack
-  image: calendar-app.png
+  image: calendar-app.PNG
   isFeatured: true
   screenshots:
-    - screenshot: login.png
+    - screenshot: login.PNG
       description: Login and Register  in the same page.
-    - screenshot: calendar-app.png
+    - screenshot: calendar-app.PNG
       description: Navbar component, Fab icons (add+ , delete-), react-big-calendar.
-    - screenshot: date-picker.png
+    - screenshot: date-picker.PNG
       description: into the react-modal component, there are handle date-picker component.
-    - screenshot: modal.png
+    - screenshot: modal.PNG
       description: modal popup from fab icon.
 
 ---

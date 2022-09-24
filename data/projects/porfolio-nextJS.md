@@ -14,7 +14,7 @@
 
   liveLink: https://emanuelvillalba.github.io/portfolio
   githubLink: https://github.com/emavi98/emanuelvillalba/portfolio
-  image: portfolio-nextjs.png
+  image: portfolio-nextjs.PNG
   isFeatured: true
 
 

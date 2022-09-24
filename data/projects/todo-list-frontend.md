@@ -8,7 +8,7 @@
 
   liveLink: https://emavi98.github.io/todo-list-react-App/
   githubLink: https://github.com/emavi98/todo-list-react-App
-  image: todo-list-app.png
+  image: todo-list-app.PNG
   isFeatured: true
 
 
